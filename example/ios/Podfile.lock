@@ -4,13 +4,19 @@ PODS:
     - Flutter
     - FlutterIJK (~> 0.2.3)
   - FlutterIJK (0.2.3)
+  - path_provider (0.0.1):
+    - Flutter
+  - path_provider_macos (0.0.1):
+    - Flutter
   - photo_manager (0.0.1):
     - Flutter
 
 DEPENDENCIES:
   - Flutter (from `Flutter`)
-  - flutter_ijkplayer (from `/Volumes/Samsung-T5/code/flutter/plugins/flutter_ijkplayer/ios/flutter_ijkplayer.podspec`)
-  - photo_manager (from `/Users/caijinglong/.pub-cache/git/flutter_photo_manager-15e4b37a4b3efc07b7500f94d316dfe02f1a324a/ios/photo_manager.podspec`)
+  - flutter_ijkplayer (from `/Users/apple/WorkFolder/flutter_ijkplayer/ios/flutter_ijkplayer.podspec`)
+  - "path_provider (from `/Users/apple/Env/flutter/.pub-cache/hosted/mirrors.tuna.tsinghua.edu.cn%47dart-pub/path_provider-1.6.7/ios/path_provider.podspec`)"
+  - "path_provider_macos (from `/Users/apple/Env/flutter/.pub-cache/hosted/mirrors.tuna.tsinghua.edu.cn%47dart-pub/path_provider_macos-0.0.4+1/ios/path_provider_macos.podspec`)"
+  - photo_manager (from `/Users/apple/Env/flutter/.pub-cache/git/flutter_photo_manager-668bb26e21097ec2c2bcf4c905db4795ccf731ee/ios/photo_manager.podspec`)
 
 SPEC REPOS:
   trunk:
@@ -20,14 +26,20 @@ EXTERNAL SOURCES:
   Flutter:
     :path: Flutter
   flutter_ijkplayer:
-    :path: "/Volumes/Samsung-T5/code/flutter/plugins/flutter_ijkplayer/ios/flutter_ijkplayer.podspec"
+    :path: "/Users/apple/WorkFolder/flutter_ijkplayer/ios/flutter_ijkplayer.podspec"
+  path_provider:
+    :path: "/Users/apple/Env/flutter/.pub-cache/hosted/mirrors.tuna.tsinghua.edu.cn%47dart-pub/path_provider-1.6.7/ios/path_provider.podspec"
+  path_provider_macos:
+    :path: "/Users/apple/Env/flutter/.pub-cache/hosted/mirrors.tuna.tsinghua.edu.cn%47dart-pub/path_provider_macos-0.0.4+1/ios/path_provider_macos.podspec"
   photo_manager:
-    :path: "/Users/caijinglong/.pub-cache/git/flutter_photo_manager-15e4b37a4b3efc07b7500f94d316dfe02f1a324a/ios/photo_manager.podspec"
+    :path: "/Users/apple/Env/flutter/.pub-cache/git/flutter_photo_manager-668bb26e21097ec2c2bcf4c905db4795ccf731ee/ios/photo_manager.podspec"
 
 SPEC CHECKSUMS:
   Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
   flutter_ijkplayer: a8f1ef22fa3e22e1ea80b70e6cb70b049cf88063
   FlutterIJK: f3715f94cea893b0e643b2b27b781033a1bb5007
+  path_provider: abfe2b5c733d04e238b0d8691db0cfd63a27a93c
+  path_provider_macos: f760a3c5b04357c380e2fddb6f9db6f3015897e0
   photo_manager: f7c619c2cc8c2adb8d85c63363babac477de9c67
 
 PODFILE CHECKSUM: 806836eca77383388df20b27737ff664222206cd

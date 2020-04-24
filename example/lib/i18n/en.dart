@@ -80,4 +80,7 @@ class _I18nEn extends I18n {
 
   @override
   String get autoFullScreenOnPlay => "Auto full screen on start.";
+
+  @override
+  String get localButton => "Local File";
 }

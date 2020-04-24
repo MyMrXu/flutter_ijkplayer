@@ -18,7 +18,7 @@ dependencies:
   flutter_localizations:
     sdk: flutter
   intl: ">=0.15.8 <1.0.0"
-
+  path_provider: ^1.6.7
   flutter_ijkplayer:
     path: ../
 

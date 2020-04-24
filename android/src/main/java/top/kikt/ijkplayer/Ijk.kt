@@ -202,15 +202,16 @@ class Ijk(private val registry: PluginRegistry.Registrar, private val options: M
     }
 
     private fun screenShot(): ByteArray? {
-        val frameBitmap = mediaPlayer.frameBitmap
-        return if (frameBitmap != null) {
-            val outputStream = ByteArrayOutputStream()
-            frameBitmap.compress(Bitmap.CompressFormat.JPEG, 100, outputStream)
-            frameBitmap.recycle()
-            outputStream.toByteArray()
-        } else {
-            null
-        }
+        return null
+//        val frameBitmap = mediaPlayer.frameBitmap
+//        return if (frameBitmap != null) {
+//            val outputStream = ByteArrayOutputStream()
+//            frameBitmap.compress(Bitmap.CompressFormat.JPEG, 100, outputStream)
+//            frameBitmap.recycle()
+//            outputStream.toByteArray()
+//        } else {
+//            null
+//        }
     }
 
     fun getInfo(): Info {

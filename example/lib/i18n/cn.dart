@@ -80,4 +80,7 @@ class _I18nZh extends I18n {
 
   @override
   String get autoFullScreenOnPlay => "在开始播放时自动播放";
+
+  @override
+  String get localButton => "本地文件";
 }

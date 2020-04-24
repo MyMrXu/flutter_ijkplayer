@@ -16,6 +16,7 @@ abstract class I18n {
 
   String get indexTitle;
   String get networkButton;
+  String get localButton;
   String get photoButton;
   String get assetButton;
   String get listViewButton;

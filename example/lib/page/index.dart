@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ijkplayer/flutter_ijkplayer.dart';
+import 'package:ijkplayer_example/page/local_file_page.dart';
 import 'package:ijkplayer_example/page/paging_page.dart';
 import 'package:ijkplayer_example/page/screen_shot_page.dart';
 import 'package:ijkplayer_example/page/video_list.dart';
@@ -35,6 +36,7 @@ class _IndexPageState extends State<IndexPage> {
         children: <Widget>[
           buildButton("For developer, user don't use.", DevelopingIndexPage()),
           buildButton(currentI18n.networkButton, NetworkPage()),
+          buildButton(currentI18n.localButton, LocalFilePage()),
           buildButton(currentI18n.photoButton, PlayGalleryPage()),
           buildButton(currentI18n.assetButton, AssetPage()),
           buildButton(currentI18n.listViewButton, VideoList()),

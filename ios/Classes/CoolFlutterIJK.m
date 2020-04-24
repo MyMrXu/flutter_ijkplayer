@@ -341,17 +341,18 @@
     if(controller.isVideoToolboxOpen){
         [self releaseLatestPixelBuffer];
     }
-  CVPixelBufferRef newBuffer = [controller framePixelbuffer];
-  if (newBuffer) {
-    CFRetain(newBuffer);
-    CVPixelBufferRef pixelBuffer = latestPixelBuffer;
-    while (!OSAtomicCompareAndSwapPtrBarrier(pixelBuffer, newBuffer,
-                                             (void **)&latestPixelBuffer)) {
-      pixelBuffer = latestPixelBuffer;
-    }
-    return pixelBuffer;
-  }
-  return NULL;
+//  CVPixelBufferRef newBuffer = [controller framePixelbuffer];
+//  if (newBuffer) {
+//    CFRetain(newBuffer);
+//    CVPixelBufferRef pixelBuffer = latestPixelBuffer;
+//    while (!OSAtomicCompareAndSwapPtrBarrier(pixelBuffer, newBuffer,
+//                                             (void **)&latestPixelBuffer)) {
+//      pixelBuffer = latestPixelBuffer;
+//    }
+//    return pixelBuffer;
+//  }
+//  return NULL;
+    return NULL;
 }
 
 - (CoolVideoInfo *)getInfo {
@@ -366,7 +367,7 @@
   info.currentPosition = currentPlaybackTime;
   info.isPlaying = [controller isPlaying];
   info.degree = degree;
-  info.tcpSpeed = [controller tcpSpeed];
+    info.tcpSpeed = 1.0f;
   info.outputFps = [controller fpsAtOutput];
 
   return info;
@@ -400,13 +401,14 @@
 }
 
 - (NSData *)screenShot {
-  CVPixelBufferRef ref = [self copyPixelBuffer];
-  if (!ref) {
     return nil;
-  }
-
-  UIImage *img = [self convertPixeclBufferToUIImage:ref];
-  return UIImageJPEGRepresentation(img, 1.0);
+//  CVPixelBufferRef ref = [self copyPixelBuffer];
+//  if (!ref) {
+//    return nil;
+//  }
+//
+//  UIImage *img = [self convertPixeclBufferToUIImage:ref];
+//  return UIImageJPEGRepresentation(img, 1.0);
 }
 
 - (UIImage *)convertPixeclBufferToUIImage:(CVPixelBufferRef)pixelBuffer {
