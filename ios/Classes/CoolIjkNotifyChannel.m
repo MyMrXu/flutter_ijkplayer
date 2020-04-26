@@ -61,10 +61,10 @@
                                                  name:IJKMPMoviePlayerPlaybackStateDidChangeNotification
                                                object:_controller];
 
-//    [[NSNotificationCenter defaultCenter] addObserver:self
-//                                             selector:@selector(movieRotationChange:)
-//                                                 name:IJKMPMoviePlayerVideoRotationNotification
-//                                               object:_controller];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(movieRotationChange:)
+                                                 name:IJKMPMoviePlayerVideoRotationNotification
+                                               object:_controller];
 }
 
 - (void)unregisterObservers {
@@ -80,9 +80,9 @@
     [[NSNotificationCenter defaultCenter] removeObserver:self
                                                     name:IJKMPMoviePlayerPlaybackStateDidChangeNotification
                                                   object:_controller];
-//    [[NSNotificationCenter defaultCenter] removeObserver:self
-//                                                    name:IJKMPMoviePlayerVideoRotationNotification
-//                                                  object:_controller];
+    [[NSNotificationCenter defaultCenter] removeObserver:self
+                                                    name:IJKMPMoviePlayerVideoRotationNotification
+                                                  object:_controller];
 }
 
 - (NSDictionary *)getInfo {
@@ -127,9 +127,9 @@
 }
 
 - (void)movieRotationChange:(NSNotification *)notification {
-//    int rotate = [[[notification userInfo] valueForKey:MPMoviePlayerTimedMetadataUserInfoKey] intValue];
-//    [_infoDelegate setDegree:rotate];
-//    [channel invokeMethod:@"rotateChanged" arguments:[self getInfo]];
+    int rotate = [[[notification userInfo] valueForKey:IJKMPMoviePlayerVideoRotationRotateUserInfoKey] intValue];
+    [_infoDelegate setDegree:rotate];
+    [channel invokeMethod:@"rotateChanged" arguments:[self getInfo]];
 }
 
 @end
